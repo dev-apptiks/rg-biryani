@@ -1,0 +1,40 @@
+root {
+    display: flex;
+    width:100%;
+  }
+  details {
+    display: flex;
+    flex-direction: "column";
+  }
+  content {
+    flex: 1 0 auto;
+  }
+  cover {
+    width: 200;
+    object-fit: cover;
+    object-position:50%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+  }
+  title {
+    font-size: 16;
+    font-family: "DD-TTNorms";
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.04ch;
+  }
+  description {
+    font-size: 14px;
+    font-family: "DD-TTNorms";
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;
+    text-transform: none;
+    color: rgb(73, 73, 73);
+    margin: 0px;
+    padding: 0px;
+    display: block;
+  }
