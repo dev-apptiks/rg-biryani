@@ -1,0 +1,21 @@
+[
+
+    {
+        "id": 5,
+        "title": "Veg Sandwich",
+        "desc": "Kids favorite, bread with a filling between them, eaten as a light meal",
+        "shortDesc":"bread with a filling between them",
+        "itemImg": "https://static.toiimg.com/thumb/54426375.cms?width=1200&height=900",
+        "price": "90/-",
+        "category": "Snacks"
+    },
+    {
+        "id": 6,
+        "title": "Burger",
+        "desc": "flat round cake of minced beef, or sometimes another savoury ingredient, that is fried or grilled",
+        "shortDesc":"flat round cake of minced beef",
+        "itemImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0XT7XYKpFYIMWaZTZ-BhrULt4QkFvUDHNw&usqp=CAU",
+        "price": "120/-",
+        "category": "Snacks"
+    }
+]

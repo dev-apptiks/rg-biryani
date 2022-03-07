@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Chicken Biryani",
+        "desc": "Kids favorite. Chicken cooked with spices, herbs and butter sauce.",
+        "shortDesc":"Chicken cooked with spices",
+        "itemImg": "https://img.cdn4dd.com/p/fit=cover,width=300,height=300,format=jpeg,quality=50/media/photos/e5a3c10b-0b0b-4b8b-b4df-0ae5ea311de1-retina-large.jpg",
+        "price": "80/-",
+        "category": "Biryani"
+    },
+    {
+        "id": 2,
+        "title": "Mutton Biryani",
+        "desc": "Mutton cooked with rice",
+        "shortDesc":"Mutton cooked with rice",
+        "itemImg": "https://media.istockphoto.com/photos/mutton-gosht-biryani-picture-id469866881?k=20&m=469866881&s=612x612&w=0&h=YvDQXgkinFpQoN94RPdzMt7Eak48n1iEvexxnWyGz-E=",
+        "price": "100/-",
+        "category": "Biryani"
+    },
+    {
+        "id": 2,
+        "title": "Mutton Biryani",
+        "desc": "Mutton cooked with rice",
+        "shortDesc":"Mutton cooked with rice",
+        "itemImg": "https://media.istockphoto.com/photos/mutton-gosht-biryani-picture-id469866881?k=20&m=469866881&s=612x612&w=0&h=YvDQXgkinFpQoN94RPdzMt7Eak48n1iEvexxnWyGz-E=",
+        "price": "100/-",
+        "category": "Biryani"
+    },
+    {
+        "id": 2,
+        "title": "Mutton Biryani",
+        "desc": "Mutton cooked with rice",
+        "shortDesc":"Mutton cooked with rice",
+        "itemImg": "https://media.istockphoto.com/photos/mutton-gosht-biryani-picture-id469866881?k=20&m=469866881&s=612x612&w=0&h=YvDQXgkinFpQoN94RPdzMt7Eak48n1iEvexxnWyGz-E=",
+        "price": "100/-",
+        "category": "Biryani"
+    }
+]

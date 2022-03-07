@@ -2,6 +2,7 @@ import React,{Component} from "react";
 import Category from "./Components/Category/Category";
 import Home from "./Components/Home/Home";
 import Header from "./Components/Header/Header"
+import Products from "./Components/Products/Products"
 
 class App extends Component{
     
@@ -10,7 +11,8 @@ class App extends Component{
             <div>
                 <Header/>
                 <Home/>
-                <Category/>
+                {/* <Category/> */}
+                <Products/>
             </div>                
         )
     }

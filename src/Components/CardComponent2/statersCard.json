@@ -1,0 +1,20 @@
+[
+    {
+    "id": 3,
+    "title": "Butter Chicken",
+    "desc": "Chicken cooked with spices, herbs and butter sauce.",
+    "shortDesc": "Chicken cooked with spices",
+    "itemImg": "https://www.feastingathome.com/wp-content/uploads/2014/07/Grilled-Tandoori-Chicken_-6.jpg",
+    "price": "150/-",
+    "category": "Starters"
+},
+{
+    "id": 4,
+    "title": "Chicken grill",
+    "desc": "yummy Tandoori chicken",
+    "shortDesc": "yummy Tandoori chicken",
+    "itemImg": "https://www.feastingathome.com/wp-content/uploads/2014/07/Grilled-Tandoori-Chicken_-6.jpg",
+    "price": "200/-",
+    "category": "Starters"
+}
+]
