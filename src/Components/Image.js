@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
 // import itemData from './itemData';
-import './image.css'
 import Grid from "@material-ui/core/Grid";
 import { Typography } from '@material-ui/core';
 
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     imgcss: {
         position: 'absolute',
         paddingRight: '100px',
-        //    marginLeft:'70px'
+        
     },
     textcss: {
         textAlign: 'center',
