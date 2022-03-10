@@ -11,6 +11,7 @@ import Staters from '../CardComponent2/statersCard';
 import Snacks from '../CardComponent2/snacksCard';
 import Grid from "@material-ui/core/Grid";
 import GenericCard from '../CardComponent2/GenericCard';
+
 import biryandCardJson from '../CardComponent2/biryaniCard.json';
 import StatersJson from '../CardComponent2/statersCard.json';
 import SnacksJson from '../CardComponent2/snacksCard.json';
@@ -107,6 +108,15 @@ export default function SimpleTabs() {
   }
 
 
+   const getItems = (itemsArray) => {
+    //console.log('from getItems function');
+      return itemsArray.map((obj)=>(
+        <Grid item xs={12} md={6} lg={6}>
+          <GenericCard data={obj} />
+          </Grid>
+      )) 
+   }
+
 
   return (
     <div className={classes.root}>
@@ -123,13 +133,11 @@ export default function SimpleTabs() {
           {genComponent()}
         </Grid>
       </TabPanel>
-
       <TabPanel value={value} index={1}>
         <Grid container>
           {getStatersComponent()}
         </Grid>
       </TabPanel>
-
       <TabPanel value={value} index={2}>
         <Grid container>
           {getSnacksComponent()}
