@@ -14,7 +14,8 @@ import GenericCard from '../CardComponent2/GenericCard';
 
 import biryandCardJson from '../CardComponent2/biryaniCard.json';
 import StatersJson from '../CardComponent2/statersCard.json';
-import  SnacksJson from '../CardComponent2/snacksCard.json';
+import SnacksJson from '../CardComponent2/snacksCard.json';
+import KababJson from '../CardComponent2/kabab.json';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -64,45 +65,47 @@ export default function SimpleTabs() {
     setValue(newValue);
   };
 
-  const getStatersComponent = () =>{
+  const getStatersComponent = () => {
 
-   return StatersJson.map((obj)=>(
+    return StatersJson.map((obj) => (
       <Grid item xs={12} md={6} lg={6}>
-      <GenericCard data={obj}/>
+        <GenericCard data={obj} />
       </Grid>
     ))
-
-
   }
 
-  const getSnacksComponent = ()=>{
+  const getSnacksComponent = () => {
 
-  return  SnacksJson.map((obj)=>(
+    return SnacksJson.map((obj) => (
 
       <Grid item xs={12} md={6} lg={6}>
-      <GenericCard data={obj}/>
+        <GenericCard data={obj} />
       </Grid>
-
-
     ))
-
+  }
+  const getKababComponent =()=>{
+            
+      return  KababJson.map((obj)=>(
+                
+            <Grid item xs={12} md={6} lg={6}>
+              <GenericCard data={obj} />
+            </Grid>
+             
+        ))
 
   }
-   const genComponent = () =>{
+  const genComponent = () => {
+    return biryandCardJson.map((obj) => {
 
-    let list = []
-    //  return <GenericCard/>
-      return biryandCardJson.map((obj)=>{
-
-        return (
-        
-          <Grid item xs={12} md={6} lg={6}>
-          <GenericCard data={obj}/>
-          </Grid>
-
-        )
-      })
-   }
+      return (
+        <Grid item xs={12} md={6} lg={6}>
+          <GenericCard data={obj} />
+        </Grid>
+         )
+    }
+    
+    )
+  }
 
 
    const getItems = (itemsArray) => {
@@ -122,30 +125,32 @@ export default function SimpleTabs() {
           <Tab label="Biryani" {...a11yProps(0)} />
           <Tab label="Staters" {...a11yProps(1)} />
           <Tab label="Snacks" {...a11yProps(2)} />
+          <Tab label="Kabab" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-
-      <Grid container>
-      {getItems(biryandCardJson)}
-      </Grid>
-
+        <Grid container>
+          {genComponent()}
+        </Grid>
       </TabPanel>
       <TabPanel value={value} index={1}>
-      
-
-      <Grid container>
-      {/* {<Staters/>} */}
-      {getItems(StatersJson)}
-      </Grid>
+        <Grid container>
+          {getStatersComponent()}
+        </Grid>
       </TabPanel>
       <TabPanel value={value} index={2}>
-
-      <Grid container>
-      {/* {<Snacks/>} */}
-      {getItems(SnacksJson)}
-      </Grid>
+        <Grid container>
+          {getSnacksComponent()}
+        </Grid>
       </TabPanel>
+
+      <TabPanel value={value} index={3}>
+        <Grid container>
+          {getKababComponent()}
+
+        </Grid>
+      </TabPanel>
+
     </div>
   );
 }

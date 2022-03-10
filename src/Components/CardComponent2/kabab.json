@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "title": "Chicken Kebab",
+        "desc": "Kids favorite, bread with a filling between them, eaten as a light meal",
+        "shortDesc":"bread with a filling between them",
+        "itemImg": "https://mrdeliveri.com/wp-content/uploads/2020/12/CHICKEN-KEBAB.jpg",
+        "price": "120/-",
+        "category": "Kebab"
+    },
+    {
+        "id": 2,
+        "title": "Paneer Kebab",
+        "desc": "Kids favorite, Paneer with a filling between them, eaten as a light meal",
+        "shortDesc":"bread with a filling between them",
+        "itemImg": "https://www.indianveggiedelight.com/wp-content/uploads/2021/08/air-fryer-paneer-tikka.jpg",
+        "price": "120/-",
+        "category": "Kebab"
+    }
+
+]
