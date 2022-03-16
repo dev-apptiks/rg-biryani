@@ -21,6 +21,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import Home from '../Home/Home'
 import Products from '../Products/Products'
 import Footer from '../Footer/Footer';
+import Services from '../Services/Services';
 
 const drawerWidth = 240;
 
@@ -159,6 +160,7 @@ export default function PersistentDrawerLeft() {
         <div className={classes.drawerHeader} />
         <Home/>
         <Products/>
+        <Services/>
         <Footer/>
       </main>
     </div>
