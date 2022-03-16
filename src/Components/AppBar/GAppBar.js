@@ -20,6 +20,9 @@ import MailIcon from '@material-ui/icons/Mail';
 
 import Home from '../Home/Home'
 import Products from '../Products/Products'
+import Services from '../Services/Services';
+
+import DialogBox from '../Dailog/DailogBox';
 
 const drawerWidth = 240;
 
@@ -84,6 +87,7 @@ export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const [openDailog, setOpenDailog] = React.useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -92,6 +96,11 @@ export default function PersistentDrawerLeft() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  const opneFormDailog = () => {
+    //alert('from form dailog')
+    setOpenDailog(true);
+  }
 
   return (
     <div className={classes.root}>
@@ -142,12 +151,17 @@ export default function PersistentDrawerLeft() {
         </List>
         <Divider />
         <List>
-          {[ 'Signup', 'Login'].map((text, index) => (
+          {[  'Login'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
+
+          <ListItem button>
+              <ListItemIcon> <MailIcon /></ListItemIcon>
+              <ListItemText primary='Signup here' onClick={opneFormDailog}/>
+            </ListItem>
         </List>
       </Drawer>
       <main
@@ -158,7 +172,11 @@ export default function PersistentDrawerLeft() {
         <div className={classes.drawerHeader} />
         <Home/>
         <Products/>
+        <Services/>
       </main>
+      {
+        openDailog && <DialogBox openDailog={openDailog}/>
+      }
     </div>
   );
 }
